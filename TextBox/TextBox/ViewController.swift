@@ -28,5 +28,4 @@ extension ViewController : AAVriferDelegate {
     func codeChanged(code: String) {
         print(code)
     }
-    
 }
