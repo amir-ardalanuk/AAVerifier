@@ -1,0 +1,11 @@
+framework module AAVerifier {
+  umbrella header "AAVerifier.h"
+
+  export *
+  module * { export * }
+}
+
+module AAVerifier.Swift {
+    header "AAVerifier-Swift.h"
+    requires objc
+}

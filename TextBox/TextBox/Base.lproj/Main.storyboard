@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yQr-IM-9YL">
+                                <rect key="frame" x="32" y="74" width="311" height="226"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-QQ-Mii">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eXM-H6-fAd" customClass="AAVerifier" customModule="AAVerifier">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="70"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontString" value="Menlo"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CodeCount">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="eXM-H6-fAd" secondAttribute="bottom" id="YNY-kn-nJe"/>
+                                            <constraint firstAttribute="trailing" secondItem="eXM-H6-fAd" secondAttribute="trailing" id="f4v-jy-2QA"/>
+                                            <constraint firstAttribute="height" constant="70" id="jJl-nh-AEi"/>
+                                            <constraint firstItem="eXM-H6-fAd" firstAttribute="leading" secondItem="Wk0-QQ-Mii" secondAttribute="leading" id="lQ9-7k-rUo"/>
+                                            <constraint firstItem="eXM-H6-fAd" firstAttribute="top" secondItem="Wk0-QQ-Mii" secondAttribute="top" id="mIc-kG-Nha"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-l4-LNh">
+                                        <rect key="frame" x="0.0" y="78" width="311" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OWm-M9-9Lc" customClass="AAVerifier" customModule="AAVerifier">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="70"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.12877142429999999" green="0.51745617389999998" blue="0.89746707680000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.12877142429999999" green="0.51745617389999998" blue="0.89746707680000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontString" value="Menlo"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CodeCount">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderString" value="-"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="6gb-5B-jUi"/>
+                                            <constraint firstAttribute="trailing" secondItem="OWm-M9-9Lc" secondAttribute="trailing" id="8ei-le-Vrc"/>
+                                            <constraint firstAttribute="bottom" secondItem="OWm-M9-9Lc" secondAttribute="bottom" id="Y2p-kM-LPg"/>
+                                            <constraint firstItem="OWm-M9-9Lc" firstAttribute="leading" secondItem="cfv-l4-LNh" secondAttribute="leading" id="fCD-Ne-7oI"/>
+                                            <constraint firstItem="OWm-M9-9Lc" firstAttribute="top" secondItem="cfv-l4-LNh" secondAttribute="top" id="wHK-lD-8de"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eB-sk-DAy">
+                                        <rect key="frame" x="0.0" y="156" width="311" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8NK-7H-ABo" customClass="AAVerifier" customModule="AAVerifier">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="70"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.75686274509999996" green="0.2274509804" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="17"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontString" value="Menlo"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CodeCount">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderString" value="*"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8NK-7H-ABo" secondAttribute="trailing" id="0li-Hc-KLk"/>
+                                            <constraint firstAttribute="height" constant="70" id="aaR-gk-jNL"/>
+                                            <constraint firstAttribute="bottom" secondItem="8NK-7H-ABo" secondAttribute="bottom" id="aoz-aV-zod"/>
+                                            <constraint firstItem="8NK-7H-ABo" firstAttribute="leading" secondItem="2eB-sk-DAy" secondAttribute="leading" id="ofu-ck-txa"/>
+                                            <constraint firstItem="8NK-7H-ABo" firstAttribute="top" secondItem="2eB-sk-DAy" secondAttribute="top" id="zjr-H2-Lyq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-rm-8NL">
+                                <rect key="frame" x="78.5" y="323.5" width="218.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤩 Add Your Verify Code 🤡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nld-nm-Rjn">
+                                        <rect key="frame" x="0.0" y="0.0" width="218.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rKl-rm-8NL" firstAttribute="top" secondItem="yQr-IM-9YL" secondAttribute="bottom" constant="23.5" id="02F-Pr-gb1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yQr-IM-9YL" secondAttribute="trailing" constant="32" id="2HK-Ko-vPU"/>
+                            <constraint firstItem="rKl-rm-8NL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SNb-wX-puC"/>
+                            <constraint firstItem="rKl-rm-8NL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNm-rp-zM3"/>
+                            <constraint firstItem="yQr-IM-9YL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="y9e-eC-afN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="verifier" destination="eXM-H6-fAd" id="kRh-h2-JYq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
