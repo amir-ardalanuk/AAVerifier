@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
           #8.
           s.source              = { :git => "https://github.com/amir-ardalanuk/AAVerifier.git", :tag => "1.0.0" }
           #9.
-          s.source_files     = "AAVerifier/*"
+          s.source_files     = "AAVerifier/AAVerifier/*"
     end
