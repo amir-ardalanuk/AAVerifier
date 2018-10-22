@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 public protocol AAVriferDelegate {
     func codeChanged(code : String)
     
@@ -16,6 +17,7 @@ protocol AAVerifierTextDelegate {
     func textChanged()
     func complete()
 }
+
 public class AAVerifier: UIStackView {
 
     
@@ -75,6 +77,11 @@ public class AAVerifier: UIStackView {
     
     public var codeDelegate : AAVriferDelegate?
     private var lastEditCode = ""
+    public var keyboardType : UIKeyboardType = .numberPad {
+        didSet{
+            self.changedKeyboardType()
+        }
+    }
     
     public override  init(frame: CGRect) {
         super.init(frame: frame)
@@ -97,10 +104,18 @@ public class AAVerifier: UIStackView {
             tf.layer.borderColor = UIColor.black.cgColor
             tf.layer.cornerRadius = 8
             tf.tag = i
+            tf.keyboardType = self.keyboardType
+            tf.keyboardType = UIKeyboardType.numberPad
             self.addArrangedSubview(tf)
         }
     }
     
+    func changedKeyboardType() {
+        for i in self.subviews  {
+            guard let tf = i as? CodeTextField else {return }
+            tf.keyboardType = self.keyboardType
+        }
+    }
  
     func setUITextField(){
         self.spacing = self.space

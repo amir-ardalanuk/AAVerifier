@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var  verifier : AAVerifier! {
         didSet{
             verifier.codeDelegate = self
+            verifier.keyboardType = .phonePad
         }
     }
     override func viewDidLoad() {
