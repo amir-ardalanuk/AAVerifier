@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
           #9.
           s.source_files       = "AAVerifier/AAVerifier/*"
           #10.
-          s.exclude_files     = "AAVerifier/AAVerifier/*.plist
+          s.exclude_files     = "AAVerifier/AAVerifier/*.plist"
        
     end
