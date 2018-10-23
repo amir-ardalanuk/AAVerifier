@@ -36,12 +36,17 @@ class CodeTextField: UITextField , Animatable {
             findPrevious()
         }
         codeDelegate.textChanged()
-        
     }
 
 }
 
 extension CodeTextField : UITextFieldDelegate {
+    override func deleteBackward() {
+        super.deleteBackward()
+        if self.text?.count == 0 {
+            findPrevious()
+        }
+    }
     
     func findNext(){
         if let nextField = self.superview?.viewWithTag(self.tag + 1) as? UITextField {
@@ -49,7 +54,7 @@ extension CodeTextField : UITextFieldDelegate {
         } else {
             // Not found, so remove keyboard.
             self.resignFirstResponder()
-            self.codeDelegate.complete()
+            //self.codeDelegate.complete()
         }
     }
     func findPrevious(){
@@ -63,7 +68,12 @@ extension CodeTextField : UITextFieldDelegate {
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let count = textField.text?.count
-        return count == 0 || (count == 1 && string == "")
+        if  count == 0 || (count == 1 && string == "") {
+            return true
+        }else {
+            findNext()
+            return false
+        }
         
     }
 }
