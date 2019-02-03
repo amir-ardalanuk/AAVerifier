@@ -130,11 +130,11 @@ public class AAVerifier: UIStackView {
             }
             tf.placeholder = self.placeholderString
             
-            #if swift(>=4.1)
-            tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
-            attributes: [[NSAttributedString.Key.foregroundColor: self.placeholderColor])
-            return
-            #endif
+//            #if swift(>=4.1)
+//            tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
+//            attributes: [[NSAttributedString.Key.foregroundColor: self.placeholderColor])
+//            return
+//            #endif
             
             tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
                                               attributes: [NSForegroundColorAttributeName : self.placeholderColor])

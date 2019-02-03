@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
           #1.
           s.name               = "AAVerifier"
           #2.
-          s.version            = "1.1.0"
+          s.version            = "1.2.1"
           #3.  
           s.summary         = "impliment Your Code Verify with Simple Way"
           #4.
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
           #7.
           s.platform            = :ios, "10.0"
           #8.
-          s.source              = { :git => "https://github.com/amir-ardalanuk/AAVerifier.git", :tag => "1.1.0" }
+          s.source              = { :git => "https://github.com/amir-ardalanuk/AAVerifier.git", :tag => "1.2.1" }
           #9.
           s.source_files       = "AAVerifier/AAVerifier/*"
           #10.
