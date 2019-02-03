@@ -129,13 +129,36 @@ public class AAVerifier: UIStackView {
                 tf.font = font
             }
             tf.placeholder = self.placeholderString
-            #if swift(>=4.0)
+            
+            #if swift(>=4.1)
             tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
-                                                                   attributes: [NSAttributedStringKey.foregroundColor: self.placeholderColor])
-            #elseif swift(>=3.0)
-            tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
-            attributes: [NSForegroundColorAttributeName : self.placeholderColor])
+            attributes: [[NSAttributedString.Key.foregroundColor: self.placeholderColor])
+            return
             #endif
+            
+            tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
+                                              attributes: [NSForegroundColorAttributeName : self.placeholderColor])
+            
+            
+            }
+    }
+    
+    /// set Code
+    ///
+    /// - Parameter string: make sure CodeCount and string charecter count must be equal
+    public func setCode(string : String) {
+        
+        let array = Array(string)
+        guard array.count == self.subviews.count else {return}
+        for (index ,i ) in self.subviews.enumerated()  {
+            guard let tf = i as? CodeTextField else {return }
+           // tf.transform = CGAffineTransform.init(translationX: 0, y: -5.5)
+           // UIView.animate(withDuration: 0.3, delay: TimeInterval(index / 6) , options: UIViewAnimationOptions.curveLinear, animations: {
+                tf.text = String(array[index])
+                tf.transform = CGAffineTransform.identity
+           // }, completion: nil)
+            
+            
         }
     }
 }
@@ -157,5 +180,3 @@ extension AAVerifier : AAVerifierTextDelegate {
         self.codeDelegate?.codeChanged(code: str)
     }
 }
-
-

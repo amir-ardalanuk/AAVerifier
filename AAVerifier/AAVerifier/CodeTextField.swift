@@ -25,7 +25,7 @@ class CodeTextField: UITextField , Animatable {
     func commit(){
         self.textAlignment = .center
         self.delegate = self
-        self.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
+       self.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
