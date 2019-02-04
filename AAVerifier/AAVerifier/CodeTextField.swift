@@ -91,8 +91,8 @@ extension CodeTextField : UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let count = textField.text?.count
-        let textFieldText: NSString = (textField.text ?? "") as NSString
-        let txtAfterUpdate = textFieldText.replacingCharacters(in: range, with: string)
+       // let _: NSString = (textField.text ?? "") as NSString
+       // _ = textFieldText.replacingCharacters(in: range, with: string)
         if (count ?? 0) > 2 {
             self.codeDelegate?.completeVerifier(text: textField.text ?? "")
             return false
@@ -103,7 +103,7 @@ extension CodeTextField : UITextFieldDelegate {
             findNext()
             return false
         }
-        return true
+      //  return true
     }
     
     
