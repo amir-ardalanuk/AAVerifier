@@ -7,17 +7,17 @@
 //
 
 import Foundation
-class BackwardTextField: UITextField {
+public class BackwardTextField: UITextField {
     
     // MARK: Life cycle
     var onBackTap:(()->Void)?
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     
     // MARK: Methods
     
-    override func deleteBackward() {
+    override public func deleteBackward() {
         super.deleteBackward()
         onBackTap?()
        // print("deleteBackward")

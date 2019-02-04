@@ -17,7 +17,10 @@ class ViewController: UIViewController {
         }
     }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        verifier.alphaTextField?.becomeFirstResponder()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
             self.verifier.setCode(string: "555665")
         }

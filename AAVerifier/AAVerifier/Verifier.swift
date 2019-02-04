@@ -80,7 +80,7 @@ public class AAVerifier: UIStackView {
         }
     }
     var textFieldItems = [CodeTextField]()
-    var alphaTextField :BackwardTextField?
+    public var alphaTextField :BackwardTextField?
     var currentTag : Int = 0
     public var codeDelegate : AAVriferDelegate?
     private var lastEditCode = ""
