@@ -15,6 +15,8 @@
 		F4CC6170215603F8006F907F /* TextBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC616F215603F8006F907F /* TextBoxTests.swift */; };
 		F4CC617B215603F8006F907F /* TextBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC617A215603F8006F907F /* TextBoxUITests.swift */; };
 		F4CC61A621561922006F907F /* AAVerifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CC61A521561922006F907F /* AAVerifier.framework */; };
+		F4F3A5692206F0900073AF07 /* AAVerifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F3A5682206F0900073AF07 /* AAVerifier.framework */; };
+		F4F3A56A2206F0900073AF07 /* AAVerifier.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F3A5682206F0900073AF07 /* AAVerifier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F4F3A56B2206F0920073AF07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4F3A56A2206F0900073AF07 /* AAVerifier.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F4CC6157215603F6006F907F /* TextBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CC615A215603F6006F907F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,7 @@
 		F4CC617A215603F8006F907F /* TextBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxUITests.swift; sourceTree = "<group>"; };
 		F4CC617C215603F8006F907F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CC61A521561922006F907F /* AAVerifier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AAVerifier.framework; sourceTree = "<group>"; };
+		F4F3A5682206F0900073AF07 /* AAVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AAVerifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F3A5692206F0900073AF07 /* AAVerifier.framework in Frameworks */,
 				F4CC61A621561922006F907F /* AAVerifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +98,7 @@
 		F4CC614E215603F6006F907F = {
 			isa = PBXGroup;
 			children = (
+				F4F3A5682206F0900073AF07 /* AAVerifier.framework */,
 				F4CC61A521561922006F907F /* AAVerifier.framework */,
 				F4CC6159215603F6006F907F /* TextBox */,
 				F4CC616E215603F8006F907F /* TextBoxTests */,
@@ -139,6 +158,7 @@
 				F4CC6153215603F6006F907F /* Sources */,
 				F4CC6154215603F6006F907F /* Frameworks */,
 				F4CC6155215603F6006F907F /* Resources */,
+				F4F3A56B2206F0920073AF07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

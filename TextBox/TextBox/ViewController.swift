@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
-            self.verifier.setCode(string: "123456")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
+            self.verifier.setCode(string: "555665")
         }
     }
 
