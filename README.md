@@ -35,7 +35,7 @@ extension ViewController : AAVriferDelegate {
     }
 }
 ```
-## get Code (1.2.2) :
+## set Code (1.2.2) :
 you can set code from sms with new iOS feature 
 ```swift
 self.verifier.setCode(string: "555665")
