@@ -19,5 +19,7 @@ Pod::Spec.new do |s|
           s.source_files       = "AAVerifier/AAVerifier/*"
           #10.
           s.exclude_files     = "AAVerifier/AAVerifier/*.plist"
+          #11.
+          swift_version       = "4.2"
        
     end
