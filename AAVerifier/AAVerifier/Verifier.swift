@@ -160,7 +160,7 @@ public class AAVerifier: UIStackView {
             }
             tf.placeholder = self.placeholderString
             tf.attributedPlaceholder = NSAttributedString(string: self.placeholderString ?? "●",
-                                              attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor) : self.placeholderColor]))
+                                              attributes: [NSAttributedString.Key.foregroundColor : self.placeholderColor])
             }
     }
     
@@ -252,13 +252,13 @@ extension AAVerifier : AAVerifierTextDelegate {
     }
 }
 
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
-	guard let input = input else { return nil }
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
-	return input.rawValue
-}
+//// Helper function inserted by Swift 4.2 migrator.
+//fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+//    guard let input = input else { return nil }
+//    return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+//}
+//
+//// Helper function inserted by Swift 4.2 migrator.
+//fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+//    return input.rawValue
+//}
